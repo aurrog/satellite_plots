@@ -21,3 +21,5 @@ graph_types = [
 ]
 
 date_pattern = r'  [0-9][0-9][0-9][0-9] [0-12]'
+
+dates_by_hours = [f'{i if len(str(i)) == 2 else f"0{i}"}:00' for i in range(0, 25)]
